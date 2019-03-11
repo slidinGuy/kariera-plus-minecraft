@@ -7,6 +7,8 @@
 // @match        *://*/*
 // @grant        GM_setValue
 // @grant        GM_getValue
+// @updateURL    https://raw.githubusercontent.com/slidinGuy/kariera-plus-minecraft/master/kariera.js
+// @downloadURL  https://raw.githubusercontent.com/slidinGuy/kariera-plus-minecraft/master/kariera.js
 // ==/UserScript==
 
 var GAME_URL = 'https://studio.code.org/s/mc/stage/1/puzzle/12';
