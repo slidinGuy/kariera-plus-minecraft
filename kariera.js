@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kariera Plus
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        *://*/*
@@ -18,7 +18,7 @@ var ALLOWED_URLS = [
     'https://www.pracujprosiliconvalley.cz/wp-content/uploads/zasady-ochrany-osobnich-udaju.pdf',
     'https://docs.google.com/document'
 ];
-var RESET_URL = 'https://www.profiq.com/';
+var RESET_URL = 'https://github.com/';
 var TIME_LIMIT = 10;
 
 var styles = {
