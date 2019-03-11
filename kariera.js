@@ -18,7 +18,7 @@ var ALLOWED_URLS = [
     'https://www.pracujprosiliconvalley.cz/wp-content/uploads/zasady-ochrany-osobnich-udaju.pdf',
     'https://docs.google.com/document'
 ];
-var RESET_URL = 'https://profiq.com/';
+var RESET_URL = 'https://profiq.com';
 var TIME_LIMIT = 10;
 
 var styles = {
@@ -53,7 +53,7 @@ var styles = {
 var timer = createElement('div', 'kariera_timer', styles.timer);
 var end_wrapper = createElement('div', 'end_wrapper', styles.timer);
 var end_button = createElement('button', 'end_button', {});
-end_button.innerText = 'End Game';
+end_button.innerText = 'Give Up';
 end_wrapper.appendChild(end_button);
 
 var start_cover = createElement('div', 'start_cover', styles.cover);
@@ -195,7 +195,7 @@ class Game {
             if (document.getElementsByClassName('freebirdFormviewerViewResponseConfirmationMessage').length) {
                 setTimeout(() => this.setState({name: 'INITIALIZED'}), 5000);
             }
-        } else if (window.location.href === RESET_URL) {
+        } else if (window.location.href.startsWith(RESET_URL)) {
             setTimeout(() => this.setState({name: 'INITIALIZED'}), 0);
         } else {
             setTimeout(() => { window.location.href = FORM_URL }, 0);
